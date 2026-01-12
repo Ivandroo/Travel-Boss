@@ -1,0 +1,429 @@
+.home-content {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/img/imagem1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content-text {
+    width: 100%;
+    padding: 0 2rem;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, transparent 80%, $color-dgrey 100%);
+    backdrop-filter: blur(1px);
+}
+
+.home-content-text p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: $color-grey;
+}
+
+.home-content-text h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: $color-dgrey;
+    text-shadow: 10px 10px 5px rgba($color: #000000, $alpha: .5);
+}
+
+//// home travels ////
+
+.home-travels {
+    width: 100%;
+    min-height: 80vh;
+    padding: 3rem 0rem ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: $color-dgrey;
+}
+
+.home-travels-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home-travels-box {
+    width: 280px;
+    height: 300px;
+    padding: 0;
+    margin: 2rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .3s ease;
+    box-shadow: 0 0 15px 5px rgba($color: #000000, $alpha: .2);
+    animation: mover 3s infinite linear;
+}
+
+.home-travels-box:hover .home-travels-text {
+    display: block;
+}
+
+.home-travels-box:hover .home-travels-text h1,
+.home-travels-box:hover .home-travels-text p,
+.home-travels-box:hover .home-travels-text span{
+    animation: .5s texto forwards ease-in-out;
+}
+
+.home-travels-box img {
+    width: 100%;
+    transition: .3s ease;
+}
+
+.home-travels-text {
+    display: none;
+    padding: 2rem;
+    width: 100%;
+    height: inherit;
+    color: #fff;
+    transition: .3s ease-in-out;
+    backdrop-filter: blur(2px);
+    background-color: rgba($color: #000000, $alpha: .2);
+}
+
+.home-travels-text h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.home-travels-text p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #e6e6e6;
+}
+
+.home-travels-text span{
+    margin-top: 3rem;
+
+    color: #064970;
+}
+
+@keyframes mover {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes texto {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+//// ABOUT SECTION ////
+
+.about-container {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-content {
+    width: 100%;
+    min-height: 80vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-title {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #064970;
+}
+
+.about-boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 2.5rem;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-box {
+    max-width: 310px;
+    text-align: center;
+    padding: 1rem;
+    border: .5px solid $color-grey;
+}
+
+.about-boxes h2 {
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+    color: #064970;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.about-boxes p {
+    color: lighten($color: #000000, $amount: 25%);
+}
+//// CAROUSSEL ////
+
+.section-caroussel {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: $color-dgrey;
+}
+
+.caroussel {
+    position: relative;
+    width: 90%;
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    height: inherit;
+    align-items: center;
+}
+
+.caroussel::-webkit-scrollbar {
+    display: none;
+}
+
+.caroussel::scroll-button(left){
+    content: '⇦';
+    font-size: 1.5rem;
+    color: $color-dgrey;
+    left: 2rem;
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #064970;
+    border: .5px solid #064970;
+} 
+
+.caroussel::scroll-button(right){
+    content: '⇨';
+    font-size: 1.5rem;
+    color: $color-dgrey;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #064970;
+    border: .5px solid #064970;
+} 
+
+.caroussel::scroll-button(left):disabled, .caroussel::scroll-button(right):disabled {
+    cursor: auto;
+    opacity: .7;
+}
+
+.card {
+    position: relative;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 0 20em;
+}
+
+.card img {
+    width: inherit;
+    transition: .5s ease-in-out;
+}
+
+.card-text {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    color: $color-dgrey;
+    text-shadow: 10px 10px 5px rgba($color: #000000, $alpha: .4);
+    background: linear-gradient(to bottom, transparent 0%, $color-dgrey 100%) ;
+}
+
+.card:hover .card-text h1 {
+    font-size: 2.5rem;
+    transform: translateY(-10px);
+}
+
+.card-text h1 {
+    transition: .3s ease-in-out;
+}
+
+//// SERVICES SECTION ////
+.services-container {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-dgrey;
+}
+
+.services-content {
+    width: 100%;
+    padding: 2rem;
+}
+
+.services-title {
+    width: 100%;
+    text-align: center;
+}
+
+.services-title h1 {
+    font-size: 2rem;
+    color: #064970;
+}
+
+.services-boxes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.services-box {
+    max-width: 310px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: .5px solid $color-grey;
+    box-shadow: 0 0 5px 3px rgba($color: #000000, $alpha: .1);
+}
+
+.services-box h2 {
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #064970;
+    margin-bottom: .5rem;
+}
+
+.services-box p {
+    padding-left: 1rem;
+    color: lighten($color: #000000, $amount: 25%);
+}
+
+//// DESTINY AREA ////
+
+.destiny-container {
+    background-color: $color-dgrey;
+}
+
+.destiny-content {
+    width: 100%;
+    padding: 2rem;
+}
+
+.destiny-title {
+    width: 100%;
+    text-align: center;
+}
+
+.destiny-title h1 {
+    font-size: 2rem;
+    color: #064970;
+    margin-bottom: 1rem;
+}
+
+.destiny-boxes {
+    width: 100%;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.destiny-box {
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 3px rgba($color: #000000, $alpha: .1);
+}
+
+.destiny-box:hover img{
+    transform: scale(1.05);
+}
+
+.destiny-img {
+    overflow: hidden;
+    width: 100%;
+}
+
+.destiny-img img {
+    width: inherit;
+    transition: .3s ease-in-out;
+}
+
+.destiny-price {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.destiny-price h2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    color: #064970;
+    padding: .8rem;
+    margin-bottom: .5rem;
+}
+
+.destiny-price span {
+    font-size: 1.3rem;
+    padding: .2rem 1rem;
+    color: #064970;
+    background-color: $color-dgrey;
+}
+
+.destiny-details {
+    padding: 0 1rem;
+}
+
+.destiny-details p {
+    color: lighten($color: #000000, $amount: 25%);
+    margin: .5rem;
+}

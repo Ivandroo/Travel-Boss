@@ -1,0 +1,76 @@
+.header-menu {
+    display: none;
+}
+
+@media (max-width: 800px) {
+
+    //// SKILLS ////
+
+    .stats {
+        gap: 40px;
+    }
+
+    //// CARROSSEL ////
+    .section-caroussel {
+        min-height:20vh ;
+    }
+
+    .caroussel {
+        width: 100%;
+    }
+
+    .card {
+        width: 380px;
+    }
+
+    //// FORMUALARIO ////
+    .form-img {
+        width: 100%;
+    } 
+
+    form {
+        width: 100%;
+    }
+
+    fieldset {
+        padding: .5rem 0;
+    }
+
+    //// COMENTARIOS ////
+    .comments-container {
+        min-height: 50vh;
+    }
+    .comments-box {
+        min-width: 280px;
+        height: 280px;
+    }
+
+    //// FOOTER ////
+    .footer-box {
+        width: 100%;
+        padding: 3rem;
+        align-items: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .header-container {
+        display: flex;
+        justify-content: end;
+    }
+    .header-up .header-box span {
+        display: none;
+    }
+    .header-container .header-box {
+        display: none;
+    }
+    .header-menu {
+        display: block;
+    }
+    //// MENU ////
+    
+    .menu-content {
+        display: flex;
+        flex-direction: column;
+    }
+}

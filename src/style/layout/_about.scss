@@ -1,0 +1,286 @@
+.stats {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+
+.stat {
+  text-align: center;
+}
+
+.circle {
+  --size: 80px;
+  --thickness: 8px;
+  --primary: #064970;
+  --bg: #e5e5e5;
+
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  position: relative;
+
+  background: conic-gradient(
+    var(--primary) calc(var(--value) * 1%),
+    var(--bg) 0
+  );
+
+  display: grid;
+  place-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: calc(var(--size) - var(--thickness) * 2);
+    height: calc(var(--size) - var(--thickness) * 2);
+    background: #fff;
+    border-radius: 50%;
+  }
+
+  span {
+    position: relative;
+    font-size: 22px;
+    font-weight: 300;
+    color: #111;
+  }
+}
+
+.stat p {
+  margin-top: 16px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #111;
+}
+
+//// COMENTÁRIOS ////
+
+.comments-container {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 1rem 3rem;
+    background: radial-gradient(circle at center, #064970 1px, $color-dgrey 1px);
+    background-size: 20px 20px;
+}
+
+.comments-content {
+    display: flex;
+    width: 100%;
+    height: inherit;
+    position: relative;
+    overflow-x: auto;
+    flex-direction: row;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
+.comments-content::-webkit-scrollbar {
+    display: none;
+}
+
+.comments-content::scroll-button(right) {
+    content: '⇨';
+    color: #064970;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 10%;
+    bottom: 3rem;
+    border: 1px solid #064970;
+    border-radius: 50%;
+}
+
+.comments-content::scroll-button(left) {
+    content: '⇦';
+    color: #064970;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 10%;
+    bottom: 3rem;
+    border: 1px solid #064970;
+    border-radius: 50%;
+}
+
+.comments-box {
+    position: relative;
+    min-width: 480px;
+    height: 260px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px 3px rgba($color: #000000, $alpha: .1);
+}
+
+.comment-img {
+    position: absolute;
+    top: -20%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comment-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.comment-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1rem;
+    font-size: 10pt;
+    color: lighten($color: #000000, $amount: 25%);
+}
+
+.comment-text p {
+    margin-bottom: 1rem;
+}
+
+.comments-forms {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+}
+
+.comments-form {
+    width: 100%;
+    min-height: 80vh;
+    padding: 1rem 3rem;
+    background: radial-gradient(circle at center, #064970 1px, $color-dgrey 1px);
+    background-size: 20px 20px;
+}
+
+.comment-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem;
+    border-radius: 4px;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 5px 3px rgba($color: #000000, $alpha: .1);
+}
+
+.form-img {
+    width: 50%;
+}
+
+.form-img img {
+    width: 100%;
+    border-radius: 2px;
+}
+
+form {
+    width: 50%;
+}
+
+form h2 {
+    font-size: 2rem;
+    color: #064970;
+}
+
+form p {
+    color: lighten($color: #000000, $amount: 25%);
+}
+
+fieldset {
+    padding: .5rem 1rem;
+    border: none;
+}
+
+input, textarea{
+    width: 100%;
+    color: #064970;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    background-color: $color-grey;
+    border: .5px solid rgba($color: #000000, $alpha: .1);
+    padding: .5rem;
+    border-radius: 4px;
+}
+
+.comentar {
+    margin-top: 1rem;
+    color: $color-dgrey;
+    background-color: #064970;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.comentar:hover {
+    font-weight: 500;
+    color: $color-color-3;
+}
+//// TEAM CARDS ////
+
+.team-container {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: $color-dgrey;
+}
+
+.team-content {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-box {
+    width: 250px;
+    height: 350px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 3px rgba($color: #000000, $alpha: .1);
+    overflow: hidden;
+}
+
+.team-box:hover img {
+    transform: scale(1.07);
+}
+
+.team-box img {
+    width: inherit;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    transition: .3s ease-in-out;
+}
+
+.team-text {
+    margin: 0;
+    text-align: center;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.team-text h2 {
+    color: #064970;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.team-text span {
+    font-size: .8rem;
+    color: lighten($color: #000000, $amount: 25%);
+}
+
+.team-text p {
+    margin: .2rem;
+    color: #064970;
+}

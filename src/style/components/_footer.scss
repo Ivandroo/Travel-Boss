@@ -1,0 +1,112 @@
+.footer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #064970;
+}
+
+.footer-box {
+    padding: 2rem 1rem 0 1rem ;
+    width: 33.3333%;
+    height: inherit;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    color: #fff;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.footer-box h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: $color-dgrey;
+    margin-bottom: .5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-footer ul {
+    padding: .5rem;
+    text-align: start;
+}
+.footer-box img {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.footer-box span {
+    font-size: .8rem;
+    color: #e6e6e6;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.social-icon {
+    transition: .3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+}
+
+.footer-subscribe {
+    display: flex;
+    width: 100%;
+    margin-top: .5rem;
+    flex-direction: row;
+    background-color: $color-grey;
+    border-radius: 4px;
+    padding: .2rem;
+}
+
+.footer-subscribe form {
+    width: 100%;
+    display: flex;
+}
+
+.footer-subscribe input {
+    background-color: transparent;
+    border: none;
+}
+
+.politics {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    background-color: darken($color: #064970, $amount: 5%);
+}
+
+.politics p {
+    font-size: 10pt;
+    color: $color-grey;
+}
+
+.politics a {
+    color: $color-grey;
+}

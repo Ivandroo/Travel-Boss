@@ -1,0 +1,56 @@
+.contact-container {
+    width: 100%;
+    padding: 3rem 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-box {
+    width: 320px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 5px 3px rgba($color: #000000, $alpha: .1);
+}
+
+.contact-box:hover h2 {
+    transform: scale(1.05);
+    transform: translateY(-50px);
+}
+
+.contact-box h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #064970;
+    margin-bottom: .8rem;
+    transition: .2s ease-in-out;
+}
+
+.contact-box p {
+    margin-top: .3rem;
+    color: lighten($color: #000000, $amount: 25%);
+}
+
+.form-img iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
