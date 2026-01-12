@@ -1,9 +1,10 @@
 {
+  "homepage": "https://ivandroo.github.io/Travel-Boss/",
   "name": "travelboss",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ivandroo.github.io/https://github.com/Ivandroo/Travel-Boss.git",
+  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
