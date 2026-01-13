@@ -54,7 +54,7 @@ function Home(){
                     <div className="home-travels-box" style={{backgroundImage: `url(${balao})`}}>
                         {/* <img src={balao} alt="" /> */}
                         <div className="home-travels-text">
-                            <h1>Passeie em blões de ar quente</h1>
+                            <h1>Passeie em balões de ar quente</h1>
                             <p>Experiencie viagens de balão de ar com a Travel Boss. </p>
                         </div>                    
                     </div>
@@ -81,7 +81,7 @@ function Home(){
                             <p>A Travel Boss está comprometida em oferecer aos nossos clientes o melhor em valor e qualidade nos arranjos de viagem.</p>
                         </div>
                         <div className="about-box">
-                            <h2>Porque nós</h2>
+                            <h2>Por que nós?</h2>
                             <p> Temos orgulho em oferecer excelente qualidade e um ótimo custo-benefício em nossos passeios.</p>
                         </div>
                         <div className="about-box">
