@@ -9,7 +9,8 @@ import { FaTiktok, FaFacebookF, FaInstagram, FaStopwatch, FaList } from "react-i
 function Header(){
     
     const button = {
-        
+        marginBottom: '1rem',
+        borderBottom: '.1rem solid #e6e6e6'
     }
 
     const icon = {
@@ -101,10 +102,10 @@ function Header(){
                 <div className="header-box">
                     <nav>
                         <ul>
-                            <li><Link to="/" style={button} className='selected'>Casa</Link></li>
-                            <li><Link to="blog" style={button} className='selected'>Blog</Link></li>
-                            <li><Link to="about" style={button} className='selected'>Sobre</Link></li>
-                            <li><Link to="contacts" style={button} className='selected'>Contacto</Link></li>
+                            <li><Link to="/" className='selected'>Casa</Link></li>
+                            <li><Link to="blog" className='selected'>Blog</Link></li>
+                            <li><Link to="about" className='selected'>Sobre</Link></li>
+                            <li><Link to="contacts" className='selected'>Contacto</Link></li>
                         </ul>
                     </nav>
                 </div>
