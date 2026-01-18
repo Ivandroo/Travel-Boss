@@ -103,7 +103,7 @@ function Header(){
                     <nav>
                         <ul>
                             <li><Link to="/" className='selected'>Casa</Link></li>
-                            <li><Link to="blog" className='selected'>Blog</Link></li>
+                            <li><Link to="blog" className='selected'>Viajar</Link></li>
                             <li><Link to="about" className='selected'>Sobre</Link></li>
                             <li><Link to="contacts" className='selected'>Contacto</Link></li>
                         </ul>
@@ -125,7 +125,7 @@ function Header(){
                     <nav>
                         <ul>
                             <li><Link to="/" onClick={() => setMenuOpen(false)} style={button} className='selected'>Casa</Link></li>
-                            <li><Link to="blog" onClick={() => setMenuOpen(false)} style={button} className='selected'>Blog</Link></li>
+                            <li><Link to="blog" onClick={() => setMenuOpen(false)} style={button} className='selected'>Viajar</Link></li>
                             <li><Link to="about" onClick={() => setMenuOpen(false)} style={button} className='selected'>Sobre</Link></li>
                             <li><Link to="contacts" onClick={() => setMenuOpen(false)} style={button} className='selected'>Contacto</Link></li>
                         </ul>

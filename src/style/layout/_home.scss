@@ -1,10 +1,47 @@
+.home-caroussel {
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.home-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1;
+    animation: spin 20s infinite linear;
+}
+
 .home-content {
     display: flex;
-    width: 100%;
+    flex: 0 0 100vw;
     height: 100vh;
-    background-image: url('../assets/img/imagem1.jpg');
+}
+
+.fundo-1 {
+    background-image: url('../assets/fundo/paisagem2.jpg');
     background-size: cover;
     background-position: center;
+}
+.fundo-2 {
+    background-image: url('../assets/fundo/paisagem1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.fundo-3 {
+    background-image: url('../assets/fundo/paisagem3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes spin {
+    0%{ translate: 0;}
+    15%{ translate: 0;}
+    30%{ translate: -33.3%;}
+    45%{ translate: -33.3%;}
+    60%{ translate: -67%;}
+    75%{ translate: -67%;}
+    90%{ translate: 0%;}
 }
 
 .home-content-text {
@@ -147,7 +184,7 @@
 }
 
 .about-title {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     color: #064970;
 }
@@ -182,21 +219,36 @@
     color: lighten($color: #000000, $amount: 25%);
 }
 //// CAROUSSEL ////
+/// 
+.Container-caroussel {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    background-color: $color-dgrey;
+    flex-direction: column;
+}
+
+.Container-caroussel h2 {
+    margin: 2rem;
+    font-size: 2rem;
+    color: #064970;
+}
 
 .section-caroussel {
     width: 100%;
-    height: 80vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
-    background-color: $color-dgrey;
+    padding: 1rem;
 }
 
 .caroussel {
     position: relative;
-    width: 90%;
+    width: 100%;
+    padding: 1rem;
     display: flex;
     overflow-x: auto;
     gap: 1rem;
@@ -223,7 +275,7 @@
     justify-content: center;
     cursor: pointer;
     background-color: #064970;
-    border: .5px solid #064970;
+    border: .5px solid $color-color-3;
 } 
 
 .caroussel::scroll-button(right){
@@ -231,6 +283,7 @@
     font-size: 1.5rem;
     color: $color-dgrey;
     border: none;
+    right: 5rem;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -255,22 +308,30 @@
     justify-content: center;
     align-items: center;
     flex: 0 0 0 20em;
+    border-radius: 10px;
 }
 
 .card img {
     width: inherit;
+    border-radius: 10px;
     transition: .5s ease-in-out;
 }
 
 .card-text {
     display: flex;
+    flex-direction: column;
     width: 100%;
     position: absolute;
     bottom: 0;
     padding: 1rem;
     color: $color-dgrey;
     text-shadow: 10px 10px 5px rgba($color: #000000, $alpha: .4);
-    background: linear-gradient(to bottom, transparent 0%, $color-dgrey 100%) ;
+    backdrop-filter: blur(.5px);
+}
+
+.card-text span {
+    color: #e6e6e6;
+    z-index: 2;
 }
 
 .card:hover .card-text h1 {

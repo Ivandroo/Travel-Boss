@@ -2,6 +2,10 @@
     width: 100%;
     min-height: 80vh;
     padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: $color-dgrey;
 }
 
@@ -16,7 +20,7 @@
 
 .blog-box {
     width: 320px;
-    height: 380px;
+    min-height: 380px;
     margin: 1rem;
     overflow: hidden;
     background-color: #fff;

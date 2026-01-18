@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import mapa from '../assets/img/61772.jpg';
 
 import vistoAfrica from '../assets/blog/capetown.jpg';
@@ -56,7 +57,8 @@ function Blog() {
                   <span>300.000kzs</span>
               </div>
               <div className="destiny-details">
-                  <a href={`https://wa.me/${numero}?text=${encodeURIComponent()}`} target="_blank" rel="noopener noreferrer" ><button className="agendar">Consultar</button></a>
+                <p>Agende um passeio com o visto de turismo.</p>
+                <a href={`https://wa.me/${numero}?text=${encodeURIComponent()}`} target="_blank" rel="noopener noreferrer" ><button className="agendar">Consultar</button></a>
               </div>  
             </div>
           </div>
@@ -70,6 +72,7 @@ function Blog() {
                   <span>1.150.000kzs</span>
               </div>
               <div className="destiny-details">
+                  <p>Agende um passeio com o visto de turismo.</p>
                   <a href={`https://wa.me/${numero}?text=${encodeURIComponent()}`} target="_blank" rel="noopener noreferrer" ><button className="agendar">Consultar</button></a>
               </div>  
             </div>
@@ -84,6 +87,7 @@ function Blog() {
                   <span>700.000kzs</span>
               </div>
               <div className="destiny-details">
+                  <p>Agende um passeio com o visto de turismo.</p>
                   <a href={`https://wa.me/${numero}?text=${encodeURIComponent()}`} target="_blank" rel="noopener noreferrer" ><button className="agendar">Consultar</button></a>
               </div>  
             </div>
@@ -98,6 +102,7 @@ function Blog() {
                   <span>700.000kzs</span>
               </div>
               <div className="destiny-details">
+                  <p>Agende um passeio com o visto de turismo.</p>
                   <a href={`https://wa.me/${numero}?text=${encodeURIComponent()}`} target="_blank" rel="noopener noreferrer" ><button className="agendar">Consultar</button></a>
               </div>  
             </div>
@@ -112,11 +117,13 @@ function Blog() {
                   <span>850.000kzs</span>
               </div>
               <div className="destiny-details">
+                  <p>Agende um passeio com o visto de turismo.</p>
                   <a href={`https://wa.me/${numero}?text=${encodeURIComponent()}`} target="_blank" rel="noopener noreferrer" ><button className="agendar">Consultar</button></a>
               </div>  
             </div>
           </div>
         </div>
+        <Link to="/vistos" className='vistos link'>Ver outros tipos de visto...</Link>
       </div>
       <div className="videos-container">
         <div className="videos-content">

@@ -62,3 +62,28 @@
     border-radius: 4px;
     cursor: pointer;
 }
+
+.vistos {
+    width: 320px;
+    padding: .6rem 2.6rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: #064970;
+    background-color: transparent;
+    border: 1px solid #064970;
+    transition: .3s ease;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.vistos:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px 3px lighten($color: #064970, $amount: 60%);
+}
+
+.link {
+    width: 320px;
+    text-decoration: none;
+    color: #064970;
+}

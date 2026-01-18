@@ -11,6 +11,7 @@ import Home from './routes/Home.jsx'
 import Contacts from './routes/Contacts.jsx'
 import Blog from './routes/Blog.jsx'
 import About from './routes/About.jsx'
+import Vistos from './routes/Vistos.jsx'
 
 
 const router = createHashRouter([
@@ -33,6 +34,10 @@ const router = createHashRouter([
       {
         path: "contacts",
         element: <Contacts />
+      }, 
+      {
+        path: "vistos",
+        element: <Vistos />
       }
     ]
   }

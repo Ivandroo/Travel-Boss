@@ -176,12 +176,6 @@ ul {
   justify-content: space-between;
 }
 
-.header-box .selected:focus {
-  color: #d3d3d3;
-  background-color: rgba(0, 0, 0, 0.2);
-  outline: none;
-}
-
 .menu-content {
   display: none;
   width: 100%;
@@ -271,6 +265,31 @@ ul {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.vistos {
+  width: 320px;
+  padding: 0.6rem 2.6rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #064970;
+  background-color: transparent;
+  border: 1px solid #064970;
+  transition: 0.3s ease;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.vistos:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5px 3px rgb(173.3728813559, 222.2033898305, 250.6271186441);
+}
+
+.link {
+  width: 320px;
+  text-decoration: none;
+  color: #064970;
 }
 
 .stats {
@@ -522,6 +541,7 @@ input, textarea {
 
 .team-box img {
   width: inherit;
+  height: 250px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   transition: 0.3s ease-in-out;
@@ -531,7 +551,7 @@ input, textarea {
   margin: 0;
   text-align: center;
   padding: 1rem;
-  overflow: hidden;
+  z-index: 2;
 }
 
 .team-text h2 {
@@ -554,6 +574,10 @@ input, textarea {
   width: 100%;
   min-height: 80vh;
   padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #f0f0f0;
 }
 
@@ -568,7 +592,7 @@ input, textarea {
 
 .blog-box {
   width: 320px;
-  height: 380px;
+  min-height: 380px;
   margin: 1rem;
   overflow: hidden;
   background-color: #fff;
@@ -683,15 +707,67 @@ input, textarea {
   border: none;
 }
 
+.home-caroussel {
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.home-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1;
+  animation: spin 20s infinite linear;
+}
+
 .home-content {
   display: flex;
-  width: 100%;
+  flex: 0 0 100vw;
   height: 100vh;
-  background-image: url("../assets/img/imagem1.jpg");
+}
+
+.fundo-1 {
+  background-image: url("../assets/fundo/paisagem2.jpg");
   background-size: cover;
   background-position: center;
 }
 
+.fundo-2 {
+  background-image: url("../assets/fundo/paisagem1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.fundo-3 {
+  background-image: url("../assets/fundo/paisagem3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes spin {
+  0% {
+    translate: 0;
+  }
+  15% {
+    translate: 0;
+  }
+  30% {
+    translate: -33.3%;
+  }
+  45% {
+    translate: -33.3%;
+  }
+  60% {
+    translate: -67%;
+  }
+  75% {
+    translate: -67%;
+  }
+  90% {
+    translate: 0%;
+  }
+}
 .home-content-text {
   width: 100%;
   padding: 0 2rem;
@@ -833,7 +909,7 @@ input, textarea {
 }
 
 .about-title {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: "Montserrat", sans-serif;
   color: #064970;
 }
@@ -868,20 +944,35 @@ input, textarea {
   color: rgb(63.75, 63.75, 63.75);
 }
 
+.Container-caroussel {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  background-color: #f0f0f0;
+  flex-direction: column;
+}
+
+.Container-caroussel h2 {
+  margin: 2rem;
+  font-size: 2rem;
+  color: #064970;
+}
+
 .section-caroussel {
   width: 100%;
-  height: 80vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  background-color: #f0f0f0;
+  padding: 1rem;
 }
 
 .caroussel {
   position: relative;
-  width: 90%;
+  width: 100%;
+  padding: 1rem;
   display: flex;
   overflow-x: auto;
   gap: 1rem;
@@ -908,7 +999,7 @@ input, textarea {
   justify-content: center;
   cursor: pointer;
   background-color: #064970;
-  border: 0.5px solid #064970;
+  border: 0.5px solid #499d45;
 }
 
 .caroussel::scroll-button(right) {
@@ -916,6 +1007,7 @@ input, textarea {
   font-size: 1.5rem;
   color: #f0f0f0;
   border: none;
+  right: 5rem;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -940,22 +1032,31 @@ input, textarea {
   justify-content: center;
   align-items: center;
   flex: 0 0 0 20em;
+  border-radius: 10px;
 }
 
 .card img {
   width: inherit;
+  border-radius: 10px;
   transition: 0.5s ease-in-out;
 }
 
 .card-text {
   display: flex;
+  flex-direction: column;
   width: 100%;
   position: absolute;
   bottom: 0;
   padding: 1rem;
   color: #f0f0f0;
   text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
-  background: linear-gradient(to bottom, transparent 0%, #f0f0f0 100%);
+  -webkit-backdrop-filter: blur(0.5px);
+          backdrop-filter: blur(0.5px);
+}
+
+.card-text span {
+  color: #e6e6e6;
+  z-index: 2;
 }
 
 .card:hover .card-text h1 {

@@ -257,6 +257,7 @@ input, textarea{
 
 .team-box img {
     width: inherit;
+    height: 250px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     transition: .3s ease-in-out;
@@ -266,7 +267,7 @@ input, textarea{
     margin: 0;
     text-align: center;
     padding: 1rem;
-    overflow: hidden;
+    z-index: 2;
 }
 
 .team-text h2 {

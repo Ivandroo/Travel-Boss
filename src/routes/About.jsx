@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import mapa from '../assets/img/61772.jpg';
 
@@ -15,6 +16,9 @@ import mulher1 from '../assets/img/bussnesswoman.jpg';
 import mulher2 from '../assets/img/jurelma.jpg';
 import ceo from '../assets/img/CEO.jpg';
 import business from '../assets/img/bussnessman.jpg';
+
+import gaspar from '../assets/team/gaspar1.jpeg'
+import arminda from '../assets/team/arminda1.jpeg'
 
 
 function About() {
@@ -66,51 +70,62 @@ function About() {
 
             </div>
 
-            <div className="section-caroussel">
+            <div className="Container-caroussel">
                 {/* <div className="button">
                     <button>left</button>
                 </div> */}
-                <div className="caroussel">
-                    <div className="card">
-                        <img src={brasil} alt="" />
-                        <div className="card-text">
-                            <h1>Brasil</h1>
+                <h2>Para onde podemos levá-lo?</h2>
+                <div className="section-caroussel">
+                
+                    <div className="caroussel">
+                        <div className="card">
+                            <img src={brasil} alt="" />
+                            <div className="card-text">
+                                <h1>Rio de Janeiro</h1>
+                                <span style={{fontSize: '1rem',fontWeight:'500'}}>Brasil</span>
+                            </div>
                         </div>
-                    </div>
-                    <div className="card">
-                        <img src={portugal} alt="" />
-                        <div className="card-text">
-                            <h1>Portugal</h1>
+                        <div className="card">
+                            <img src={portugal} alt="" />
+                            <div className="card-text">
+                                <h1>Lisboa</h1>
+                                <span style={{fontSize: '1rem',fontWeight:'500'}}>Portugal</span>
+                            </div>
                         </div>
-                    </div>
-                    <div className="card">
-                        <img src={barcelona} alt="" />
-                        <div className="card-text">
-                            <h1>Barcelona</h1>
+                        <div className="card">
+                            <img src={barcelona} alt="" />
+                            <div className="card-text">
+                                <h1>Barcelona</h1>
+                                <span style={{fontSize: '1rem',fontWeight:'500'}}>Espanha</span>
+                            </div>
                         </div>
-                    </div>
-                    <div className="card">
-                        <img src={canada} alt="" />
-                        <div className="card-text">
-                            <h1>Canadá</h1>
+                        <div className="card">
+                            <img src={canada} alt="" />
+                            <div className="card-text">
+                                <h1>Toronto</h1>
+                                <span style={{fontSize: '1rem',fontWeight:'500'}}>Canadá</span>
+                            </div>
                         </div>
-                    </div>
-                    <div className="card">
-                        <img src={eua} alt="" />
-                        <div className="card-text">
-                            <h1>E.U.A.</h1>
+                        <div className="card">
+                            <img src={eua} alt="" />
+                            <div className="card-text">
+                                <h1>Nova York</h1>
+                                <span style={{fontSize: '1rem',fontWeight:'500'}}>EUA</span>
+                            </div>
                         </div>
-                    </div>
-                    <div className="card">
-                        <img src={africadosul} alt="" />
-                        <div className="card-text">
-                            <h1>Africa do Sul</h1>
+                        <div className="card">
+                            <img src={africadosul} alt="" />
+                            <div className="card-text">
+                                <h1>Cape Town</h1>
+                                <span style={{fontSize: '1rem',fontWeight:'500'}}>Afica do sul</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 {/* <div className="button">
                     <button className="scroll-right">right</button>
                 </div> */}
+                <button className='vistos'><Link className='link'>Ver tipos de visto</Link></button>
             </div>
 
             <div className="comments-container">
@@ -121,7 +136,7 @@ function About() {
                         </div>
                         <div className="comment-text">
                             <p>"Minha experiência com a agência de viagens Travel Boss foi excepcional! Eles organizaram tudo com muito cuidado e atenção aos detalhes, deixando-me livre para aproveitar cada momento da viagem." </p>
-                            <h2>Jurelma Domingos</h2>
+                            <h2> - Jurelma Domingos</h2>
                         </div>
                     </div>
                     <div className="comments-box">
@@ -130,7 +145,7 @@ function About() {
                         </div>
                         <div className="comment-text">
                             <p>"A equipe foi super prestativa e garantiu que tudo fosse perfeito, desde as reservas até as atividades. Foi muito bom contar com especialistas que entendem do assunto e transformam uma viagem em algo realmente especial. Recomendo sem hesitação!" </p>
-                            <h2>Domingas Neto</h2>
+                            <h2> - Domingas Neto</h2>
                         </div>
                     </div>
                     <div className="comments-box">
@@ -139,7 +154,7 @@ function About() {
                         </div>
                         <div className="comment-text">
                             <p>""Adorei a experiência com a agência de viagens! Eles cuidaram de todos os detalhes, desde os voos até as atividades locais, garantindo que minha viagem fosse tranquila e sem preocupações." </p>
-                            <h2>Marcelo João</h2>
+                            <h2> - Marcelo João</h2>
                         </div>
                     </div>
                 </div>
@@ -186,19 +201,19 @@ function About() {
                     </div>
 
                     <div className="team-box">
-                        <img src={business} alt="" />
+                        <img src={gaspar} alt="" />
                         <div className="team-text">
-                            <h2>Josemar Samuel</h2>
-                            <span> Director </span>
-                            <p>948 037 239</p>
+                            <h2>Gaspar Andrade</h2>
+                            <span> Consultar de viagens </span>
+                            <p>922 065 477</p>
                         </div>
                     </div>
 
                     <div className="team-box">
-                        <img src={mulher1} alt="" />
+                        <img src={arminda} alt="" />
                         <div className="team-text">
-                            <h2>Domingas Neto</h2>
-                            <span> Agente de viagens </span>
+                            <h2> Arminda Lopes </h2>
+                            <span> Consultora de viagens </span>
                             <p>922 254 299</p>
                         </div>
                     </div>

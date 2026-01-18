@@ -16,6 +16,7 @@ import portugal from '../assets/img/03portugal.jpg'
 import canada from '../assets/img/canadá.jpg'
 import africadosul from '../assets/img/africa-do-sul.jpg'
 import eua from '../assets/img/eua.jpg'
+import Vistos from "./Vistos";
 
 
 function Home(){
@@ -32,11 +33,29 @@ function Home(){
 
     return(
         <div className="home-container" id="home">
-            <div className="home-content">
-                <div className="home-content-text">
-                    <p>Explore lugares incriveis com a</p>
-                    <h1>Travel Boss</h1>
-                    <button className="explorar" onClick={() => document.getElementById("destinos") ?.scrollIntoView({ behavior: "smooth" })}>Explorar</button> 
+            <div className="home-caroussel">
+                <div className="home-group">
+                    <div className="home-content fundo-1">
+                        <div className="home-content-text">
+                            <p style={{color: '#064970'}}>Explore lugares incriveis com a</p>
+                            <h1>Travel Boss</h1>
+                            <button className="explorar" onClick={() => document.getElementById("destinos") ?.scrollIntoView({ behavior: "smooth" })}>Explorar</button> 
+                        </div>
+                    </div>
+                    <div className="home-content fundo-2">
+                        <div className="home-content-text">
+                            <p style={{color: '#064970'}}>Explore lugares incriveis com a</p>
+                            <h1>Travel Boss</h1>
+                            <button className="explorar" onClick={() => document.getElementById("destinos") ?.scrollIntoView({ behavior: "smooth" })}>Explorar</button> 
+                        </div>
+                    </div>
+                    <div className="home-content fundo-3">
+                        <div className="home-content-text">
+                            <p>Explore lugares incriveis com a</p>
+                            <h1>Travel Boss</h1>
+                            <button className="explorar" onClick={() => document.getElementById("destinos") ?.scrollIntoView({ behavior: "smooth" })}>Explorar</button> 
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -92,51 +111,62 @@ function Home(){
                 </div>
             </div>
 
-            <div className="section-caroussel">
+            <div className="Container-caroussel">
                 {/* <div className="button">
                     <button>left</button>
                 </div> */}
-                <div className="caroussel">
-                    <div className="card">
-                        <img src={brasil} alt="" />
-                        <div className="card-text">
-                            <h1>Brasil</h1>
+                <h2>Para onde podemos levá-lo?</h2>
+                <div className="section-caroussel">
+                
+                    <div className="caroussel">
+                        <div className="card">
+                            <img src={brasil} alt="" />
+                            <div className="card-text">
+                                <h1>Rio de Janeiro</h1>
+                                <span style={{fontSize: '1rem',fontWeight:'500'}}>Brasil</span>
+                            </div>
                         </div>
-                    </div>
-                    <div className="card">
-                        <img src={portugal} alt="" />
-                        <div className="card-text">
-                            <h1>Portugal</h1>
+                        <div className="card">
+                            <img src={portugal} alt="" />
+                            <div className="card-text">
+                                <h1>Lisboa</h1>
+                                <span style={{fontSize: '1rem',fontWeight:'500'}}>Portugal</span>
+                            </div>
                         </div>
-                    </div>
-                    <div className="card">
-                        <img src={barcelona} alt="" />
-                        <div className="card-text">
-                            <h1>Espanha</h1>
+                        <div className="card">
+                            <img src={barcelona} alt="" />
+                            <div className="card-text">
+                                <h1>Barcelona</h1>
+                                <span style={{fontSize: '1rem',fontWeight:'500'}}>Espanha</span>
+                            </div>
                         </div>
-                    </div>
-                    <div className="card">
-                        <img src={canada} alt="" />
-                        <div className="card-text">
-                            <h1>Canadá</h1>
+                        <div className="card">
+                            <img src={canada} alt="" />
+                            <div className="card-text">
+                                <h1>Toronto</h1>
+                                <span style={{fontSize: '1rem',fontWeight:'500'}}>Canadá</span>
+                            </div>
                         </div>
-                    </div>
-                    <div className="card">
-                        <img src={eua} alt="" />
-                        <div className="card-text">
-                            <h1>E.U.A.</h1>
+                        <div className="card">
+                            <img src={eua} alt="" />
+                            <div className="card-text">
+                                <h1>Nova York</h1>
+                                <span style={{fontSize: '1rem',fontWeight:'500'}}>EUA</span>
+                            </div>
                         </div>
-                    </div>
-                    <div className="card">
-                        <img src={africadosul} alt="" />
-                        <div className="card-text">
-                            <h1>Africa do Sul</h1>
+                        <div className="card">
+                            <img src={africadosul} alt="" />
+                            <div className="card-text">
+                                <h1>Cape town</h1>
+                                <span style={{fontSize: '1rem',fontWeight:'500'}}>Africa do Sul</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 {/* <div className="button">
                     <button className="scroll-right">right</button>
                 </div> */}
+                <Link to="vistos" className='vistos link'>Ver outros tipos de visto...</Link>
             </div>
 
             <div className="services-container">
@@ -212,7 +242,7 @@ function Home(){
                                 </div>
                                 <div className="destiny-details">
                                     <p>A cidade é famosa pelas suas praias mundialmente conhecidas, como Copacabana, Ipanema e Leblon, que atraem visitantes de todas as partes do mundo.</p>
-                                    <a href={`https://wa.me/${numero}?text=${encodeURIComponent(agendarBrasil)}`} target="_blank" rel="noopener noreferrer" ><button className="agendar">Angendar</button></a>
+                                    <a href={`https://wa.me/${numero}?text=${encodeURIComponent(agendarBrasil)}`} target="_blank" rel="noopener noreferrer" ><button className="agendar">Agendar</button></a>
                                 </div>
                                 
                             </div>
