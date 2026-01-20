@@ -21,13 +21,12 @@ function Contacts() {
           <div className="contact-box">
             <FaPhone style={icon}/>
             <h2>Contacto</h2>
-            <p>+244 923 531 284</p>
-            <p>+244 947 876 761</p>
+            <p>+244 922 254 236</p>
           </div>
           <div className="contact-box">
             <FaMailBulk style={icon} />
             <h2>Email</h2>
-            <p>geral@magivic.gdmao.com</p>
+            <p>geral@travelboss.gdmao.com</p>
           </div>
           <div className="contact-box">
             <FaHome style={icon}/>

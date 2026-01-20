@@ -221,7 +221,7 @@ function Home(){
                             </div>
                             <div className="destiny-text">
                                 <div className="destiny-price">
-                                    <h2>Lisboa, Portugal</h2>
+                                    <h2>Portugal, Lisboa</h2>
                                     <span>700.000kzs</span>
                                 </div>
                                 <div className="destiny-details">
@@ -237,7 +237,7 @@ function Home(){
                             </div>
                             <div className="destiny-text">
                                 <div className="destiny-price">
-                                    <h2>Rio de Janeiro, Brasil</h2>
+                                    <h2>Brasil, Rio de Janeiro</h2>
                                     <span>1.300.000kzs</span>
                                 </div>
                                 <div className="destiny-details">

@@ -53,7 +53,7 @@ function Blog() {
             </div>
             <div className="destiny-text">
               <div className="destiny-price">
-                  <h2>Capetown, Africa do Sul</h2>
+                  <h2>Africa do Sul, Capetown</h2>
                   <span>300.000kzs</span>
               </div>
               <div className="destiny-details">
@@ -68,7 +68,7 @@ function Blog() {
             </div>
             <div className="destiny-text">
               <div className="destiny-price">
-                  <h2>Vancouver, Canadá</h2>
+                  <h2>Canadá, Vancouver</h2>
                   <span>1.150.000kzs</span>
               </div>
               <div className="destiny-details">
@@ -83,7 +83,7 @@ function Blog() {
             </div>
             <div className="destiny-text">
               <div className="destiny-price">
-                  <h2>Paris, França</h2>
+                  <h2>França, Paris</h2>
                   <span>700.000kzs</span>
               </div>
               <div className="destiny-details">
@@ -98,7 +98,7 @@ function Blog() {
             </div>
             <div className="destiny-text">
               <div className="destiny-price">
-                  <h2>Barcelona, Espanha</h2>
+                  <h2>Espanha, Barcelona</h2>
                   <span>700.000kzs</span>
               </div>
               <div className="destiny-details">
@@ -113,7 +113,7 @@ function Blog() {
             </div>
             <div className="destiny-text">
               <div className="destiny-price">
-                  <h2>Nova York, EUA</h2>
+                  <h2>Estados Unidos, Nova York</h2>
                   <span>850.000kzs</span>
               </div>
               <div className="destiny-details">

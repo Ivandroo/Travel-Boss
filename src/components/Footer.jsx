@@ -35,8 +35,10 @@ function Footer() {
             <img src={logo} alt="" />
             <span>Viagem, Turismo e Câmbio</span>
             <div className="social">
-              <Link className='social-icon'><FaTiktok style={icon}/></Link>
-              <Link to="https://www.tiktok.com/search?q=travel%20boss&t=1743151249568" target="_blank" rel="noopener noreferrer" className='social-icon'><FaFacebookF style={icon} /></Link>
+              <Link to="https://www.tiktok.com/@travell.boss.viagens?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className='social-icon'><FaTiktok style={icon}/></Link>
+
+              <Link to="https://www.facebook.com/people/Travel-Boss-viagens-e-C%C3%A2mbio/61554085484818/" target="_blank" rel="noopener noreferrer" className='social-icon'><FaFacebookF style={icon} /></Link>
+              
               <Link className='social-icon'><FaInstagram style={icon} /></Link>
             </div>
             
@@ -46,9 +48,11 @@ function Footer() {
               <h2>Link úteis</h2>
               <ul>
                   <li><Link to="/" style={button} onClick={() => document.getElementById('home') ?.scrollIntoView({ behavior: "smooth"})}>Casa</Link></li>
-                  <li><Link to="blog" style={button} onClick={() => document.getElementById('blog') ?.scrollIntoView({ behavior: "smooth"})}>Blog</Link></li>
+                  <li><Link to="blog" style={button} onClick={() => document.getElementById('blog') ?.scrollIntoView({ behavior: "smooth"})}>Viajar</Link></li>
+                  <li><Link to="vistos" style={button} onClick={() => document.getElementById('vistos') ?.scrollIntoView({ behavior: "smooth"})}>Vistos</Link></li>
                   <li><Link to="about" style={button} onClick={() => document.getElementById('about') ?.scrollIntoView({ behavior: "smooth"})}>Sobre</Link></li>
                   <li><Link to="contacts" style={button} onClick={() => document.getElementById('contact') ?.scrollIntoView({ behavior: "smooth"})}>Contacto</Link></li>
+                  
               </ul>
             </div>
           </div>

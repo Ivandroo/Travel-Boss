@@ -104,13 +104,14 @@ function Header(){
                         <ul>
                             <li><Link to="/" className='selected'>Casa</Link></li>
                             <li><Link to="blog" className='selected'>Viajar</Link></li>
+                            <li><Link to="vistos" className='selected'>Vistos</Link></li>
                             <li><Link to="about" className='selected'>Sobre</Link></li>
                             <li><Link to="contacts" className='selected'>Contacto</Link></li>
                         </ul>
                     </nav>
                 </div>
                 <div className="header-box">
-                    <Link className='social-icon'><FaTiktok style={icon} /></Link>
+                    <Link to="https://www.tiktok.com/@travell.boss.viagens?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className='social-icon'><FaTiktok style={icon} /></Link>
                     <Link to="https://www.facebook.com/people/Travel-Boss-viagens-e-C%C3%A2mbio/61554085484818/" target="_blank" rel="noopener noreferrer" className='social-icon'><FaFacebookF style={icon} /></Link>
                     <Link className='social-icon'><FaInstagram style={icon} /></Link>
                 </div>
@@ -126,6 +127,7 @@ function Header(){
                         <ul>
                             <li><Link to="/" onClick={() => setMenuOpen(false)} style={button} className='selected'>Casa</Link></li>
                             <li><Link to="blog" onClick={() => setMenuOpen(false)} style={button} className='selected'>Viajar</Link></li>
+                            <li><Link to="vistos" onClick={() => setMenuOpen(false)} style={button} className='selected'>Vistos</Link></li>
                             <li><Link to="about" onClick={() => setMenuOpen(false)} style={button} className='selected'>Sobre</Link></li>
                             <li><Link to="contacts" onClick={() => setMenuOpen(false)} style={button} className='selected'>Contacto</Link></li>
                         </ul>

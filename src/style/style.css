@@ -587,12 +587,12 @@ input, textarea {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .blog-box {
   width: 320px;
-  min-height: 380px;
+  min-height: 400px;
   margin: 1rem;
   overflow: hidden;
   background-color: #fff;
@@ -628,7 +628,7 @@ input, textarea {
 }
 
 .videos-box {
-  height: 400px;
+  height: 480px;
   background-color: #fff;
   animation: mover 3s infinite linear;
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
@@ -1244,6 +1244,14 @@ input, textarea {
     min-width: 280px;
     height: 280px;
   }
+  .videos-content {
+    width: 100%;
+    padding: 2rem 3rem;
+  }
+  .videos-box {
+    width: 100%;
+    height: inherit;
+  }
   .footer-box {
     width: 100%;
     padding: 3rem;
@@ -1268,4 +1276,68 @@ input, textarea {
     display: flex;
     flex-direction: column;
   }
+}
+.vistos-container {
+  width: 100%;
+  min-height: 80vh;
+  background-color: #f0f0f0;
+}
+
+.vistos-content {
+  width: 100%;
+}
+
+.vistos-boxes {
+  width: 100%;
+  min-height: 80vh;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.vistos-box {
+  width: 320px;
+  min-height: 380px;
+  margin: 1rem;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.vistos-box:hover img {
+  transform: scale(1.08);
+}
+
+.vistos-img img {
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+.vitoos-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.vistos-title h2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  color: #064970;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.vistos-list a {
+  color: rgb(63.75, 63.75, 63.75);
+}
+
+.vistos-list p {
+  color: #064970;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
