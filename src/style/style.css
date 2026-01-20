@@ -206,18 +206,18 @@ ul {
   margin: 0 1.3rem;
   font-weight: 500;
   font-size: 1rem;
-  color: #499d45;
+  color: #25D366;
   background-color: transparent;
-  border: 1.8px solid #499d45;
+  border: 1.8px solid #25D366;
   transition: 0.3s ease;
   cursor: pointer;
   border-radius: 4px;
 }
 
 .bugdet:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   color: #fff;
-  background-color: #499d45;
+  background-color: #25D366;
   border: 1.8px solid transparent;
 }
 

@@ -35,9 +35,7 @@ export default function Vistos() {
                             <div className="vistos-list">
                                 <p><a href={`https://wa.me/${numero}?text=${encodeURIComponent(turismo)} Africa do sul`} target="_blank" rel="noopener noreferrer">Turismo (sem visto)</a> 300.000kzs</p>
                                 <p><a href="#">Visto de estudante</a> --- </p>
-                                <p><a href="#">Visto de formação profissional</a>--- </p>
                                 <p><a href="#">Visto de consulta médica</a>---</p>
-                                <p><a href="#">Visto de procura de emprego</a>---</p>
                             </div>
                         </div>
                     </div>

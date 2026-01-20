@@ -39,7 +39,7 @@ function Footer() {
 
               <Link to="https://www.facebook.com/people/Travel-Boss-viagens-e-C%C3%A2mbio/61554085484818/" target="_blank" rel="noopener noreferrer" className='social-icon'><FaFacebookF style={icon} /></Link>
               
-              <Link className='social-icon'><FaInstagram style={icon} /></Link>
+              <Link to="https://www.instagram.com/travel_boss6?igsh=NDInNTBweXd5NDdy" target="_blank" rel="noopener noreferrer" className='social-icon'><FaInstagram style={icon} /></Link>
             </div>
             
           </div>

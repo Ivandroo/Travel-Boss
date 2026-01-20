@@ -113,7 +113,7 @@ function Header(){
                 <div className="header-box">
                     <Link to="https://www.tiktok.com/@travell.boss.viagens?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className='social-icon'><FaTiktok style={icon} /></Link>
                     <Link to="https://www.facebook.com/people/Travel-Boss-viagens-e-C%C3%A2mbio/61554085484818/" target="_blank" rel="noopener noreferrer" className='social-icon'><FaFacebookF style={icon} /></Link>
-                    <Link className='social-icon'><FaInstagram style={icon} /></Link>
+                    <Link to="https://www.instagram.com/travel_boss6?igsh=NDInNTBweXd5NDdy" target="_blank" rel="noopener noreferrer" className='social-icon'><FaInstagram style={icon} /></Link>
                 </div>
                 <div className="header-menu">
                     <button style={icon} ref={toggleRef} className="menu-toggle" onClick={showMenu} aria-expanded={menuOpen} aria-controls="menu-box" aria-label="Toggle menu">

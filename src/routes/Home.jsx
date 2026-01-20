@@ -166,7 +166,7 @@ function Home(){
                 {/* <div className="button">
                     <button className="scroll-right">right</button>
                 </div> */}
-                <Link to="vistos" className='vistos link'>Ver outros tipos de visto...</Link>
+                <Link to="/vistos" className='vistos link'>Ver outros vistos...</Link>
             </div>
 
             <div className="services-container">

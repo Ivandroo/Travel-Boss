@@ -19,6 +19,7 @@ import business from '../assets/img/bussnessman.jpg';
 
 import gaspar from '../assets/team/gaspar1.jpeg'
 import arminda from '../assets/team/arminda1.jpeg'
+import logo from '../assets/icon/Logo1.png'
 
 
 function About() {
@@ -125,7 +126,7 @@ function About() {
                 {/* <div className="button">
                     <button className="scroll-right">right</button>
                 </div> */}
-                <button className='vistos'><Link className='link'>Ver tipos de visto</Link></button>
+                <Link to="/vistos" className='vistos link'>Ver outros vistos...</Link>
             </div>
 
             <div className="comments-container">
@@ -214,16 +215,16 @@ function About() {
                         <div className="team-text">
                             <h2> Arminda Lopes </h2>
                             <span> Consultora de viagens </span>
-                            <p>922 254 299</p>
+                            <p>9</p>
                         </div>
                     </div>
 
                     <div className="team-box">
-                        <img src={mulher2} alt="" />
+                        <img src={logo} alt="" />
                         <div className="team-text">
-                            <h2>Jurelma Domingas</h2>
-                            <span> Consultora de viagens </span>
-                            <p></p>
+                            <h2>Travel Boss</h2>
+                            <span> Agência </span>
+                            <p> 922 254 236</p>
                         </div>
                     </div>
                 </div>
