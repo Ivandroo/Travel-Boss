@@ -11,7 +11,7 @@ function App() {
   const icon = {
     fontSize: '2rem',
     position: 'fixed',
-    left: '0',
+    left: '.5rem',
     zIndex: '1000',
     bottom: '2rem',
     color: '#fff',
@@ -20,7 +20,7 @@ function App() {
     width: '3.2rem',
     height: '3.2rem',
     cursor: 'pointer',
-    borderRadius: '0 4px 4px 0',
+    borderRadius: '2px 2px 2px 2px',
     border: '1px solid #e6e6e6',
     boxShadow: '0 0 5px 3px rgba(0,0,0, .1)',
     display: 'flex',

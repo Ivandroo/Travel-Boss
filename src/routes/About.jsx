@@ -215,7 +215,7 @@ function About() {
                         <div className="team-text">
                             <h2> Arminda Lopes </h2>
                             <span> Consultora de viagens </span>
-                            <p>9</p>
+                            <p>959 850 168</p>
                         </div>
                     </div>
 
